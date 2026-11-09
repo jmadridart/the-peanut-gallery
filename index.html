@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#140d0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>The Peanut Gallery</title>
+  <meta name="description" content="The Peanut Gallery, self-titled album. Out November 9, 2026 on Hardy Crew Label.">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="wordmark" href="index.html">the peanut gallery</a>
+      <nav aria-label="Main">
+        <ul class="nav">
+          <li><a href="#music">music</a></li>
+          <li><a href="#about">about</a></li>
+          <li><a href="press.html">press</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero" aria-labelledby="title">
+      <div class="wrap hero-inner">
+        <p class="kicker">out now &middot; november 9, 2026</p>
+        <h1 id="title" class="band">The Peanut Gallery</h1>
+        <div class="cover hero-cover">
+          <img src="assets/images/cover.jpg" alt="The Peanut Gallery album cover" onerror="this.onerror=null;this.src='assets/images/cover-placeholder.svg'">
+        </div>
+        <p class="sub">self-titled debut &middot; 11 songs &middot; hardy crew label</p>
+        <p class="links"><a href="#music">listen</a><a href="press.html">press kit</a></p>
+      </div>
+    </section>
+
+    <section id="music" class="section" aria-labelledby="music-h">
+      <div class="wrap">
+        <p class="label">Tracklist</p>
+        <h2 id="music-h" class="h2">The Peanut Gallery</h2>
+        <div class="player" data-player="all">
+      <div class="transport">
+        <button type="button" class="ctrl prev" aria-label="Previous track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 5h2v14H6zM20 5v14L9 12z"/></svg></button>
+        <button type="button" class="ctrl play" aria-label="Play"><svg class="i-play" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 4v16l13-8z"/></svg><svg class="i-pause" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 4h4v16H6zM14 4h4v16h-4z"/></svg></button>
+        <button type="button" class="ctrl next" aria-label="Next track"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16 5h2v14h-2zM4 5v14l11-7z"/></svg></button>
+        <div class="now" aria-live="polite">
+          <p class="label now-label">Selected</p>
+          <p class="now-title">Checking audio…</p>
+        </div>
+      </div>
+      <div class="progress">
+        <span class="t-cur">0:00</span>
+        <input class="seek" type="range" min="0" max="100" step="0.1" value="0" aria-label="Seek">
+        <span class="t-dur">0:00</span>
+      </div>
+      <p class="status" role="status"></p>
+      <ol class="tracks" aria-label="Tracklist"></ol>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section" aria-labelledby="about-h">
+      <div class="wrap two-col">
+        <div>
+          <p class="label">About</p>
+          <h2 id="about-h" class="h2">The band</h2>
+          <div class="prose">
+            <p>The Peanut Gallery is a collaborative music project bringing together different artists, personalities, and influences under one name. Created in collaboration with Bubbles, the project is built around a simple idea: music gets more interesting when everyone brings something different to it. Each collaboration gives The Peanut Gallery its own sound, shaped by the people involved rather than a single fixed style.</p>
+            <p>Their self-titled debut was recorded at Hardy Crew Studios in Newport Beach, California, and comes out November 9, 2026 on Hardy Crew Label.</p>
+          </div>
+        </div>
+        <div>
+          <dl class="facts">
+            <div><dt>Genre</dt><dd>Indie rock / synth / funk</dd></div>
+            <div><dt>For fans of</dt><dd>Alex G, Mac DeMarco, early Tame Impala</dd></div>
+            <div><dt>Label</dt><dd>Hardy Crew Label</dd></div>
+            <div><dt>Instagram</dt><dd class="tbd">TBD</dd></div>
+          </dl>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">
+      <p>&copy; <span data-year>2026</span> The Peanut Gallery / Hardy Crew Label</p>
+      <p><a href="press.html">Press kit</a></p>
+    </div>
+  </footer>
+
+  <script src="player.js"></script>
+</body>
+</html>
